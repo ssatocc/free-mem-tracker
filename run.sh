@@ -10,7 +10,13 @@ function handle_sigint() {
 
 trap handle_sigint SIGINT
 
+function echo_free_mem() {
+    d=$(date --iso-8601=seconds)
+    fm=$(free -h | awk '/^Mem:/{print $4}')
+    echo "${d},${fm}"
+}
+
 while true; do
-    date
+    echo_free_mem
     sleep ${INTERVAL}
 done
