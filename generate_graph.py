@@ -7,7 +7,7 @@ def main():
     data['date'] = pd.to_datetime(data['date'])
 
     plt.figure(figsize=(10, 6))
-    plt.plot(data['date'], data['free-mem'], marker='o', linestyle='-')
+    plt.plot(data['date'], data['free-mem'])
 
     plt.title('Free Memory')
     plt.xlabel('Time')
