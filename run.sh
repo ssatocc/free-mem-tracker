@@ -16,7 +16,8 @@ function echo_free_mem() {
     echo "${d},${fm}"
 }
 
+echo 'date,free-mem' > ${OUTPUT_CSV}
 while true; do
-    echo_free_mem
+    echo_free_mem >> ${OUTPUT_CSV}
     sleep ${INTERVAL}
 done
