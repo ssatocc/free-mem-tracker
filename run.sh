@@ -12,7 +12,7 @@ trap handle_sigint SIGINT
 
 function echo_free_mem() {
     d=$(date --iso-8601=seconds)
-    fm=$(free -h | awk '/^Mem:/{print $4}')
+    fm=$(free --mega | awk '/^Mem:/{print $4}')
     echo "${d},${fm}"
 }
 
