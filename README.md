@@ -20,5 +20,5 @@ bash run.sh
 ## Create output.png
 
 ```bash
-python generate_graph.py 
+python run.py 
 ```
