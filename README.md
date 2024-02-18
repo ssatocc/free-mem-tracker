@@ -14,11 +14,11 @@ pipenv install --dev
 ## Create output.csv
 
 ```bash
-bash run.sh 
+bash run.sh
 ```
 
 ## Create output.png
 
 ```bash
-python run.py 
+python run.py
 ```
